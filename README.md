@@ -3,12 +3,16 @@ Control of the game Monza based in Artificial Intelligent
 
 ### Results of my model
 
+Parabola.m
+
 Level 1: https://www.youtube.com/watch?v=H-8b9CnbbZQ
 Level 2: https://www.youtube.com/watch?v=vAR_TquSjm0
 Level 3: https://www.youtube.com/watch?v=ZtlX5FuURYc
 Level 4: https://www.youtube.com/watch?v=HlfWMSC2ijM
 
 ### Results of the monza simulation
+
+Monza_simulacion_Nx.slx
 
 Level 1: https://www.youtube.com/watch?v=K7kUgsX0c24
 Level 2: https://www.youtube.com/watch?v=Q51ZtHH4raE
