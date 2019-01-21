@@ -1,0 +1,52 @@
+[System]
+Name='Controlador'
+Type='mamdani'
+Version=2.0
+NumInputs=3
+NumOutputs=1
+NumRules=0
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='dist'
+Range=[-0.01 0.25]
+NumMFs=3
+MF1='caida':'trimf',[-0.01 0 0.04]
+MF2='carril':'trapmf',[0.04 0.1 0.2551 0.3071]
+MF3='cerca':'trimf',[0 0.04 0.1]
+
+[Input2]
+Name='alpha'
+Range=[-1 1]
+NumMFs=5
+MF1='MN':'trapmf',[-1.45 -1.05 -0.2 -0.05]
+MF2='N':'trimf',[-0.2 -0.05 0]
+MF3='Z':'trimf',[-0.05 0 0.05]
+MF4='P':'trimf',[0 0.05 0.2]
+MF5='MP':'trapmf',[0.05 0.2 1.05 1.45]
+
+[Input3]
+Name='V'
+Range=[-2 2]
+NumMFs=5
+MF1='MN':'trapmf',[-2.9 -2.1 -0.5 -0.1]
+MF2='N':'trimf',[-0.5 -0.1 0]
+MF3='Z':'trimf',[-0.1 0 0.1]
+MF4='P':'trimf',[0 0.1 0.5]
+MF5='MP':'trapmf',[0.1 0.5 2.1 2.9]
+
+[Output1]
+Name='ang'
+Range=[-0.5 0.5]
+NumMFs=5
+MF1='MN':'trapmf',[-0.725 -0.525 -0.2 -0.05]
+MF2='N':'trimf',[-0.2 -0.05 0]
+MF3='Z':'trimf',[-0.05 0 0.05]
+MF4='P':'trimf',[0 0.05 0.2]
+MF5='MP':'trapmf',[0.05 0.2 0.525 0.725]
+
+[Rules]
